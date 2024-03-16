@@ -9,5 +9,7 @@
 - Walk through a directory-like structure, outputting the names of folders and files. Each folder/file should be indented to the left according to its level from the root, and also should have the number of files it contains overall beneath it.
 
 - How ConcurrentHashMaps are implemented?
+
 - The first guy wanted me to implement a ReadWrite lock. Which I did. I love concurrency design patterns. I wanted to engage more and talk about RCU locks or fairness in lock acquisition or cool ways of avoiding deadlocks in code
+
 - What's a thread vs a process?
