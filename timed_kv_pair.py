@@ -1,25 +1,28 @@
-class TimeMap:
 
+
+class TimeMap:
     def __init__(self):
         self.dct = {}
 
     def set(self, key: str, value: str, timestamp: int) -> None:
-        value_ts = self.dct.get(key, {value:timestamp})
-        value_ts[value] = timestamp
-        self.dct[key] = value_ts
+        if key not in self.dct:
+            self.dct[key] = {}
+        self.dct[key][value] = timestamp
         print(self.dct)
-        
+
     def get(self, key: str, timestamp: int) -> str:
-        value_ts = self.dct.get(key, {})
-        if not value_ts:
+        if key not in self.dct:
             return ""
-        # Sort by timestamp
-        sorted_ts = dict(sorted(value_ts.items(), key=lambda item : item[1], reverse = True))
+        value_ts = self.dct[key]
+        sorted_ts = dict(
+            sorted(value_ts.items(), key=lambda item: item[1], reverse=True)
+        )
+
         for value, ts_prev in sorted_ts.items():
             if ts_prev <= timestamp:
-                return value 
+                return value
         return ""
- 
+
 
 TimeMap = TimeMap()
 TimeMap.set("foo", "bar", 1)
