@@ -24,7 +24,7 @@ Here are the top algorithms and data structures that are commonly asked in codin
 4. Sorting and Searching
 
    - Binary Search [x]
-   - Merge Sort
+   - Merge Sort [x]
    - Quick Sort
    - Heap Sort
 
