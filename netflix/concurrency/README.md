@@ -16,3 +16,5 @@
 - **Master-Worker Pattern**: The master-worker pattern is used to execute multiple tasks at the same time.
 - **Pipeline Pattern**: The pipeline pattern is used to execute multiple tasks at the same time.
 - **Fork-Join Pattern**: The fork-join pattern is used to execute multiple tasks at the same time.
+
+# Semaphors vs. Mutexes

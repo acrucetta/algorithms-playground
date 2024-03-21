@@ -18,7 +18,7 @@ Here are the top algorithms and data structures that are commonly asked in codin
 
    - Depth-First Search (DFS) [x]
    - Breadth-First Search (BFS) [x]
-   - Binary Search Trees (BST)
+   - Binary Search Trees (BST) [x]
    - Union-Find (Disjoint Set)
 
 4. Sorting and Searching
@@ -26,7 +26,7 @@ Here are the top algorithms and data structures that are commonly asked in codin
    - Binary Search [x]
    - Merge Sort [x]
    - Quick Sort
-   - Heap Sort
+   - Heap Sort [x]
 
 5. Dynamic Programming
 
@@ -41,7 +41,7 @@ Here are the top algorithms and data structures that are commonly asked in codin
 
 7. Greedy Algorithms
 
-   - Interval Scheduling
+   - Interval Scheduling [x]
    - Huffman Coding
    - Prim's and Kruskal's Algorithms
 
@@ -51,5 +51,5 @@ Here are the top algorithms and data structures that are commonly asked in codin
    - Dijkstra's Algorithm [x]
 
 9. Hash Tables
-   - Collision Resolution
+   - Collision Resolution [x]
    - HashSet and HashMap
