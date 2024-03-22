@@ -45,21 +45,23 @@ test_cases = {
     "case2": ([0, 1, 1], []),
 }
 
-def equals_zero(i,j,k):
-    resp = i+j+k
+
+def equals_zero(i, j, k):
+    resp = i + j + k
     return resp == 0
+
 
 def three_sum(nums):
     nums.sort()
     n = len(nums)
     triplets = set()
 
-    for i in range(n-2):
+    for i in range(n - 2):  # O(N)
         firstNum = nums[i]
-        left = i+1
-        right = n-1
+        left = i + 1
+        right = n - 1
 
-        while left < right:
+        while left < right:  # O(N/2)
             curr_sum = firstNum + nums[left] + nums[right]
             if curr_sum > 0:
                 right -= 1
@@ -70,5 +72,6 @@ def three_sum(nums):
                 left += 1
                 right -= 1
     return triplets
+
 
 three_sum([-1, 0, 1, 2, -1, -4])
